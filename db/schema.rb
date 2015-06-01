@@ -26,9 +26,9 @@ ActiveRecord::Schema.define(version: 20150323103442) do
   end
 
   create_table "posts", force: true do |t|
+    t.string   "url"
     t.string   "title"
     t.text     "description"
-    t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
